@@ -15,7 +15,8 @@ nav {
     top: 0;
     display: inline-block;
     text-align: center;
-    
+    height: 44px;
+    font-weight: bold;
 }
 ul {
     padding: 0;
@@ -41,29 +42,32 @@ a {
     font-weight: bold;
 }
 #section1 {
+   background: image(C:\Users\ReDI\Downloads\wallpaper.png);
     height: 700px;
-    background: rgb(151, 0, 144);
+    background: rgb(11, 176, 206);
     display: inline-block;
     width: 100%;
+    margin:0px 20px 0px 0px ;
 
 }
 #section2 {
     height: 700px;
-    background: rgb(0, 151, 126);
+    background-image: url(C:\Users\ReDI\Downloads\wallpaper.png);
     display: inline-block;
     width: 100%;
     
 }
 #section3 {
     height: 700px;
-    background:blueviolet;
+    background:rgb(43, 101, 226);
     display: inline-block;
     width: 100%;
+    
     
 }
 #section4 {
     height: 700px;
-    background: rgb(170, 9, 44);
+    background: rgb(25, 9, 170);
     display: inline-block;
     width: 100%;
     
@@ -76,11 +80,190 @@ a {
     
 }
 h1 {
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+
+img {
+    border-radius: 8px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h3 {
+    text-align: center;
+}
+
+.socicons-list {
+	list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.socicons-list li {
+  margin: 30px 10px;
+}
+.socicons-list li a {
+  text-decoration: none;
+  padding: 15px;
+	font-size: 20px;
+  border-radius: 12%;
+  color: #fff;
+	background-color: #f1f1f1;
+  transition: all ease-in-out 150ms;
+}
+.socicons-list li a:hover {
+text-shadow: 0 5px 10px #212121;
+
+}
+
+.socicons-list li:nth-child(1) a {
+    background-color: #0a45c5;
+    
+}
+.socicons-list li:nth-child(2) a {
+    background-color: #0a3ecc;
+    
+}
+.socicons-list li:nth-child(3) a {
+    background-color: #11a1fa;
+    
+}
+.socicons-list li:nth-child(4) a {
+    background-color: #04188b;
+    
+}
+.socicons-list li:nth-child(5) a {
+    background-color: #031536;
+    
+}
+
+.md-block-blockquote {
+    margin: 20px;
+    background-color: rgb(230, 235, 235);
+    text-align: center;
+}
+
+#top {
+   bottom: top;
+   text-align: center;
+color: blue;
+}
+p {
+    text-align: center;
+}
+.toppage {
+    background-color: black;
     text-align: center;
 }
 
 
 
 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
